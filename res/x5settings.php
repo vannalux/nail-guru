@@ -7,9 +7,9 @@
 */
 
 $imSettings['general'] = array(
-	'url' => 'https://vannalux.ml/',
-	'homepage_url' => 'https://vannalux.ml/index.html',
-	'icon' => 'https://vannalux.ml/favImage.png',
+	'url' => 'https://vannalux.github.io/',
+	'homepage_url' => 'https://vannalux.github.io/index.html',
+	'icon' => 'https://vannalux.github.io/favImage.png',
 	'version' => '14.0.3.1',
 	'sitename' => 'Vannalux',
 	'public_folder' => '',
