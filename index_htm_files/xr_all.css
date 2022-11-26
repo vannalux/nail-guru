@@ -1,0 +1,12 @@
+@media screen and (max-width: 814px) {
+.xr_mvp_2 {display: block;}
+.xr_mvp_1 {display: none;}
+.xr_pbd {margin-left: -240px;}
+#xr_xr {width: 480px; height: 1152px}
+}
+@media screen and (min-width: 815px) {
+.xr_mvp_2 {display: none;}
+.xr_mvp_1 {display: block;}
+.xr_pbd {margin-left: -575px;}
+#xr_xr {width: 1150px; height: 1777px}
+}
