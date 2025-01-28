@@ -1,0 +1,11 @@
+{
+	"name": "Маникюр и педикюр в Одессе Admin",
+	"start_url": "https://nail-guru.com/admin/",
+	"display": "standalone",
+	"background_color": "#E5E5E5",
+	"theme_color": "#F28D4F",
+	"scope": "https://nail-guru.com/admin/",
+	"icons": [
+		{ "src": "https://nail-guru.com/admin/images/logo.webp", "type": "image/png", "sizes": "126x126" }
+	]
+}
