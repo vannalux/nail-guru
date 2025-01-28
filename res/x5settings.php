@@ -11,12 +11,29 @@ $imSettings['general'] = array(
 	'url' => 'https://nail-guru.com/',
 	'homepage_url' => 'https://nail-guru.com/index.html',
 	'icon' => 'https://nail-guru.com/favImage.png',
-	'version' => '2022.3.6.0',
+	'version' => '2024.4.9.1',
 	'sitename' => 'Маникюр и педикюр в Одессе',
-	'lang_code' => 'ru-RU',
+	'lang_code' => 'ru',
 	'public_folder' => 'papka-anna',
 	'salt' => 'sn0xtifszxeeezsd9woy9wjbmycl73uid3qb11at1p21',
-	'common_email_sender_addres' => 'annapumpkin777@gmail.com'
+	'common_email_sender_addres' => 'vannavam2015@gmail.com',
+	'enable_sender_header' => true,
+	'date_format' => 'dd MMM yyyy',
+	'date_format_ext' => 'dddd dd MMM yyyy',
+	'date_format_no_day' => 'MMM yyyy',
+	'date_format_no_day_ext' => 'MMM yyyy'
+);
+/*
+|-------------------------------
+|	BREAKPOINTS
+|-------------------------------
+*/
+
+$imSettings['breakpoints'] = array(
+	array("name" => "Desktop", "hash" => "0b2b945a892bcda4c78387b96b83462d", "start" => "max", "end" => 1280.0, "fluid" => false),
+	array("name" => "Breakpoint 1", "hash" => "d2f9bff7f63c0d6b7c7d55510409c19b", "start" => 1279.9, "end" => 720.0, "fluid" => false),
+	array("name" => "Mobile", "hash" => "72e5146e7d399bc2f8a12127e43469f1", "start" => 719.9, "end" => 480.0, "fluid" => false),
+	array("name" => "Mobile Fluid", "hash" => "5ecdcca63de80fd3d4fbb36295d22b7d", "start" => 479.9, "end" => 0.0, "fluid" => true),
 );
 /*
 |-------------------------------
@@ -36,17 +53,18 @@ $imSettings['password_policy'] = array(
 |	Captcha
 |-------------------------------
 */ImTopic::$captcha_code = "		<div class=\"x5captcha-wrap\">
-			<label for=\"5ghynt8n-imCpt\">Проверочное слово:</label><br />
-			<input type=\"text\" id=\"5ghynt8n-imCpt\" class=\"imCpt\" name=\"imCpt\" maxlength=\"5\" />
+			<label for=\"pt57oa8n-imCpt\">Проверочное слово:</label><br />
+			<input type=\"text\" id=\"pt57oa8n-imCpt\" class=\"imCpt\" name=\"imCpt\" maxlength=\"5\" />
 		</div>
 ";
 
 
 $imSettings['admin'] = array(
-	'icon' => 'admin/images/logo_ui66xx38.webp',
-	'notification_public_key' => '614171bff079b06a',
-	'notification_private_key' => 'f64bc8950974f6dd',
-	'enable_manager_notifications' => false,
+	'icon' => 'admin/images/logo.webp',
+	'notification_public_key' => 'BJH1W2r5A8Bi0z42dNo9GeDBLCww9KANTEpC1ijtSnZRYajghcltFxWy3u1Dc7PjMu4GHW5O5XNiiNOgrzOZDUM',
+	'notification_private_key' => '7cri3BmM9vRwLDUV-VcNL-8-F0eqfBNieganNi4fLh4',
+	'notification_dbprefix' => 'w5_fdacxfn3_notifications_',
+	'enable_notifications' => false,
 	'theme' => 'orange',
 	'extra-dashboard' => array(),
 	'extra-links' => array()
@@ -62,10 +80,10 @@ $imSettings['admin'] = array(
 $imSettings['databases'] = array(
 	'7h9d1knd' => array(
 		'description' => '',
-		'host' => '162.19.169.143',
-		'database' => 'anna8248_anna',
-		'user' => 'anna8248_anna',
-		'password' => 'wq3]*mp4V9*V',
+		'host' => 'localhost',
+		'database' => 'vanna148_anna',
+		'user' => 'vanna148_anna',
+		'password' => '111333555tTt',
 		'table_prefix' => ''
 	)
 );
@@ -152,16 +170,14 @@ $ecommerce->setShippingData(array(
 		'name' => 'почтой',
 		'description' => 'Товары будут доставлены в течение 3-5 дней.',
 		'email_text' => 'Доставка почтой.\\nТовары будут доставлены в течение 3-5 дней.',
-		'enable_tracking' => false,
-		'tracking_url' => ''
+		'tracking_type' => 'none'
 	),
 	'hdj47dut' => array(
 		'id' => 'hdj47dut',
 		'name' => 'службой экспресс-доставки',
 		'description' => 'Товары будут доставлены в течение 1-2 дней.',
 		'email_text' => 'Доставка службой экспресс-доставки.\\nТовары будут доставлены в течение 1-2 дней.',
-		'enable_tracking' => false,
-		'tracking_url' => ''
+		'tracking_type' => 'none'
 	)));
 
 /*
@@ -193,8 +209,8 @@ $imSettings['dynamicobjects'] = array(	'template' => array(
 
 $ImMailer->emailType = 'phpmailer';
 $ImMailer->exposeWsx5 = false;
-$ImMailer->header = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">' . "\n" . '<html>' . "\n" . '<head>' . "\n" . '<meta http-equiv="content-type" content="text/html; charset=utf-8">' . "\n" . '</head>' . "\n" . '<body bgcolor="#134F5C" style="background-color: #134F5C;">' . "\n\t" . '<table border="0" cellpadding="0" align="center" cellspacing="0" style="padding: 0; margin: 0 auto; width: 700px;">' . "\n\t" . '<tr><td id="imEmailContent" style="min-height: 300px; padding: 10px; font: normal normal normal 12pt \'Arial\'; color: #000000; background-color: #FFFFFF; text-decoration: none; text-align: left; width: 700px; border-style: solid; border-color: #000000; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: #FFFFFF" width="700px">' . "\n\t\t";
-$ImMailer->footer = "\n\t" . '</td></tr>' . "\n\t" . '</table>' . "\n" . '<table width="100%"><tr><td id="imEmailFooter" style="font: normal normal normal 10pt \'Arial\'; color: #FFFFFF; background-color: transparent; text-decoration: none; text-align: center;  padding: 10px; margin-top: 5px;background-color: transparent">' . "\n\t\t" . 'Это письмо-подтверждение предназначено для исключения несанкционированного использования вашего адреса электронной почты.<br>Если вы получили это сообщение по ошибке, пожалуйста, сообщите об этом отправителю и удалите это письмо, не делая копий.' . "\n\t" . '</td></tr></table>' . "\n\t" . '</body>' . "\n" . '</html>';
+$ImMailer->header = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">' . "\n" . '<html>' . "\n" . '<head>' . "\n" . '<meta http-equiv="content-type" content="text/html; charset=utf-8">' . "\n" . '</head>' . "\n" . '<body bgcolor="#134F5C" style="background-color: #134F5C;">' . "\n\t" . '<table border="0" cellpadding="0" align="center" cellspacing="0" style="padding: 0; margin: 0 auto; width: 700px; border-collapse: separate; ">' . "\n\t" . '<tr><td id="imEmailContent" style="min-height: 300px; padding: 10px; font: normal normal normal 12pt \'Arial\'; color: #000000; background-color: #FFFFFF; text-decoration: none; text-align: left; width: 700px; border-style: solid; border-color: #000000 #000000 #000000 #000000; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 0; border-bottom: none; border-left-width: 1px; margin-top: 25px;  margin-bottom: 25px;  margin-left: 25px;  margin-right: 25px;  background-color: #FFFFFF" width="700px">' . "\n\t\t";
+$ImMailer->footer = "\n\t" . '</td></tr>' . "\n\t" . '<tr><td id="imEmailIcons" style="background-color: #FFFFFF;border-left-style: solid; border-left-color: #000000; border-left-width: 1px; border-right-style: solid; border-right-color: #000000; border-right-width: 1px; border-bottom-style: solid; border-bottom-color: #000000; border-bottom-width: 1px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;  padding-top: 25px;  padding-bottom: 25px;  padding-left: 15px;  padding-right: 15px;  text-align: center;  min-height: 300px; " width="700"></td></tr>' . "\n\t" . '</table>' . "\n" . '<table width="100%"><tr><td id="imEmailFooter" style="font: normal normal normal 10pt \'Arial\'; color: #FFFFFF; background-color: transparent; text-decoration: none; text-align: center;  padding: 10px; margin-top: 5px;background-color: transparent">' . "\n\t\t" . 'Это письмо-подтверждение предназначено для исключения несанкционированного использования вашего адреса электронной почты.<br>Если вы получили это сообщение по ошибке, пожалуйста, сообщите об этом отправителю и удалите это письмо, не делая копий.' . "\n\t" . '</td></tr></table>' . "\n\t" . '</body>' . "\n" . '</html>';
 $ImMailer->bodyBackground = '#FFFFFF';
 $ImMailer->bodyBackgroundEven = '#FFFFFF';
 $ImMailer->bodyBackgroundOdd = '#F0F0F0';

@@ -7,6 +7,7 @@ $imSettings['access']['users'] = array(
 		'groups' => array('0l1ggk0h'),
 		'firstname' => 'Admin',
 		'lastname' => '',
+		'email' => 'example@example.com',
 		'password' => '$2a$11$kqOpC.9BrLsJjbqrCoRfl.pEARxY7F0U0bNWVcqn4Of.cAuuPu4aG',
 		'crypt_encoding' => 'csharp_bcrypt',
 		'db_stored' => false,
