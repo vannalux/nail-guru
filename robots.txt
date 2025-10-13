@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /admin
-Disallow: /captcha
-Disallow: /imemail
-
-Sitemap: https://vannalux.github.io/nail-guru/sitemap.xml
